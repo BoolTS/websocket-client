@@ -1,0 +1,44 @@
+{
+    "name": "@bool-ts/websocket-client",
+    "version": "1.0.1",
+    "author": "Trần Đức Tâm (Neo)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BoolTS/websocket-client.git"
+    },
+    "main": "./dist/index.js",
+    "module": "./src/index.ts",
+    "devDependencies": {
+        "@types/bun": "latest",
+        "typescript": "^5.8.3"
+    },
+    "bugs": {
+        "url": "https://github.com/BoolTS/websocket-client/issues"
+    },
+    "description": "WebSocket client for BoolTS framework",
+    "files": [
+        "./dist",
+        "./src"
+    ],
+    "homepage": "https://github.com/BoolTS/websocket-client#readme",
+    "keywords": [
+        "bool",
+        "typescript",
+        "ts",
+        "bun",
+        "framework",
+        "websocket",
+        "client-side"
+    ],
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "tsc --emitDeclarationOnly && bun build src/index.ts --outdir=dist --minify",
+        "test": "bun run --watch ./__test/index.ts"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts"
+}
