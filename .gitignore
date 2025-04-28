@@ -126,3 +126,24 @@ web_modules/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Macbook file(s)
+.DS_Store
+# Windows file(s)
+Thumbs.db
+# Linux file(s)
+*~
+# JetBrains IDEs
+.idea/
+# VSCode settings
+.vscode/
+# Local env files
+.env.local
+# Local env files for Docker
+.env.docker
+# Local env files for Docker Compose
+.env.docker-compose
+# Local env files for Docker Swarm
+.env.docker-swarm
+# Local env files for Docker Kubernetes
+.env.docker-kubernetes
